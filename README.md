@@ -27,11 +27,13 @@ $ docker-compose up
 ### Testing that it Works
 
 ```
-$ curl -I <docker_vm_ip|localhost>/assets/images/logo.svg 2>/dev/null | head -n 1 | cut -d$' ' -f2
+$ curl -I http://<docker_vm_ip|localhost>/assets/images/logo.svg 2>/dev/null | head -n 1 | cut -d$' ' -f2
 200
 
-$ curl -I <docker_vm_ip|localhost>/ 2>/dev/null | head -n 1 | cut -d$' ' -f2 
+$ curl -I http://<docker_vm_ip|localhost>/ 2>/dev/null | head -n 1 | cut -d$' ' -f2 
 200
+
+$ open http://<docker_vm_ip|localhost>/
 ```
 
 ## What's Included?
