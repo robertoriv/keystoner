@@ -1,0 +1,16 @@
+app:
+  build: ./retailmenot-demo
+  ports:
+   - "3000:3000"
+#  volumes:
+#   - ./retailmenot-demo:/usr/src/app
+  links:
+   - mongo
+mongo:
+  image: mongo
+nginx:
+  build: ./nginx
+  ports:
+   - "80:80"
+  links:
+   - app
