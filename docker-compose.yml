@@ -1,9 +1,9 @@
 app:
-  build: ./retailmenot-demo
+  build: ./keystone-demo
   ports:
    - "3000:3000"
 #  volumes:
-#   - ./retailmenot-demo:/usr/src/app
+#   - ./keystone-demo:/app
   links:
    - mongo
 mongo:

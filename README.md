@@ -28,7 +28,7 @@ $ docker-compose up
 
 2. **MongoDB** - [MongoDB](https://www.mongodb.org/) serves as the data store for the application. This image is an unmodified [official MongoDB image](https://hub.docker.com/_/mongo/). (More on that later.)
 
-3. **RetailMeNot Demo** - A basic KeystoneJS app.
+3. **Keystone Demo** - A basic KeystoneJS app.
 
 ## Issues (and Other Insteresting Findings)
 

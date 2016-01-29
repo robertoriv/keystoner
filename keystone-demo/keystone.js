@@ -11,8 +11,8 @@ var keystone = require('keystone');
 
 keystone.init({
 
-	'name': 'RetailMeNot Demo',
-	'brand': 'RetailMeNot Demo',
+	'name': 'Keystone Demo',
+	'brand': 'Keystone Demo',
 	
 	'sass': 'public',
 	'static': 'public',
@@ -21,7 +21,7 @@ keystone.init({
 	'view engine': 'jade',
 	
 	'auto update': true,
-	'mongo': 'mongodb://mongo/retailmenot-demo',
+	'mongo': 'mongodb://mongo/keystone-demo',
 	'session': true,
 	'auth': true,
 	'user model': 'User'
