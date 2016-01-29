@@ -1,6 +1,14 @@
-# base image with node pre-installed; see README for explanation
-FROM node:onbuild
+FROM node
 
 MAINTAINER Roberto Rivera <roberto.rivera@gmail.com>
 
-EXPOSE 3000
+# copy the app files to the /app folder
+COPY . /app
+
+WORKDIR /app
+
+# grab all dependencies
+RUN npm install
+
+# start the app
+CMD ["node", "keystone"]
