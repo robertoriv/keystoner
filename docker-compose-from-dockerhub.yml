@@ -1,0 +1,16 @@
+app:
+  image: rrivera/keystoner-app
+  ports:
+   - "3000:3000"
+#  volumes:
+#   - ./keystone-demo:/app
+  links:
+   - mongo
+mongo:
+  image: mongo
+nginx:
+  image: rrivera/keystoner-nginx
+  ports:
+   - "80:80"
+  links:
+   - app
