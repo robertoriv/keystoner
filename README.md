@@ -26,7 +26,7 @@ $ docker-compose up
 
 1. **nginx** - Used as a front-end to the app. nginx will proxy-pass requests to the app running in a container on port `3000`. In addition to proxy-passing the app request, it also hosts all the files/folders in the [nginx/assets](nginx/assets) directory. Those files will be served by nginx rather than the app. The docker image for nginx consists of the [offical nginx image](https://hub.docker.com/_/nginx/) with some added configuration.
 
-2. **MongoDB** - [MongoDB](https://www.mongodb.org/) serves as the data store for the application. This image is based on an [official MongoDB image](https://hub.docker.com/_/mongo/). (More on that later.)
+2. **MongoDB** - [MongoDB](https://www.mongodb.org/) serves as the data store for the application. This image is an unmodified [official MongoDB image](https://hub.docker.com/_/mongo/). (More on that later.)
 
 3. **RetailMeNot Demo** - A basic KeystoneJS app.
 
