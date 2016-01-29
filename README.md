@@ -17,7 +17,7 @@ The docker-compose files were tested against a Mac OS X (10.11.3) system, with t
 ### Buiding the Images and Running the app
 
 ```
-$ git clone <URL>
+$ git clone git@github.com:robertoriv/keystoner.git keystoner
 $ docker-compose build
 $ docker-compose up
 ```
