@@ -1,5 +1,5 @@
 app:
-  build: ./keystone-demo
+  image: rrivera/keystoner-app
   ports:
    - "3000:3000"
 #  volumes:
@@ -9,7 +9,7 @@ app:
 mongo:
   image: mongo
 nginx:
-  build: ./nginx
+  image: rrivera/keystoner-nginx
   ports:
    - "80:80"
   links:

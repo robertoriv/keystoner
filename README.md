@@ -8,7 +8,7 @@ The `Keystoner` repository contains a sample [KeystoneJS](http://keystonejs.com/
 
 ### Requirements
 
-The docker-compose files were tested against a Mac OS X (10.11.3) system, with the [Docker Toolbox](https://www.docker.com/products/docker-toolbox).
+The docker-compose files were tested against a system running Mac OS X (10.11.3), with the [Docker Toolbox](https://www.docker.com/products/docker-toolbox).
 
 `KeystoneJS` requires: 
 1. Yeoman (yo)
@@ -16,14 +16,13 @@ The docker-compose files were tested against a Mac OS X (10.11.3) system, with t
 
 ### Buiding the Images and Running the app
 
-#### From Scratch (Build Your Own Image)
+#### From Scratch (Build Your Own Images)
 
 ```
 $ git clone git@github.com:robertoriv/keystoner.git keystoner
 $ cd keystoner
-$ docker-compose build
+$ docker-compose -f docker-compose-byoi.yml up
 # grab some coffee?
-$ docker-compose up
 ```
 
 #### From DockerHub
@@ -31,7 +30,7 @@ $ docker-compose up
 ```
 $ git clone git@github.com:robertoriv/keystoner.git keystoner
 $ cd keystoner
-$ ddocker-compose -f docker-compose-from-dockerhub.yml up
+$ docker-compose up
 ```
 
 ### Testing that it Works
@@ -52,7 +51,7 @@ $ open http://<docker_vm_ip|localhost>/
 
 2. **MongoDB** - [MongoDB](https://www.mongodb.org/) serves as the data store for the application. This image is an unmodified [official MongoDB image](https://hub.docker.com/_/mongo/). (More on that later.)
 
-3. **Keystone Demo** - A basic KeystoneJS app.
+3. **Keystone Demo** - A basic KeystoneJS demo app.
 
 ## Issues (and Other Insteresting Findings)
 
